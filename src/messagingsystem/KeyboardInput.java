@@ -13,18 +13,14 @@ import java.util.Scanner;
  */
 public class KeyboardInput implements MessageInput {
 
-    private Scanner keyboardInput = new Scanner(System.in);
-    private String input;
+    private Scanner keyboardInput = 
+                    new Scanner(System.in);
+    
 
     @Override
-    public void setMessageInput( ) {
+    public void setMessageInput( String input ) {
         System.out.println("Enter text: ");
-        this.input = keyboardInput.nextLine();
-    }
-
-    @Override
-    public String getMessage() {
-        return input;
+        input = keyboardInput.nextLine();
     }
 
 }

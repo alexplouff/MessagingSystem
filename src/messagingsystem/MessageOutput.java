@@ -13,6 +13,5 @@ public interface MessageOutput {
 
     public abstract String getMessage(  );
     
-    public abstract void sendMessage( String message );
     
 }

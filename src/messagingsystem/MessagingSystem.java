@@ -20,9 +20,11 @@ public class MessagingSystem {
     }
     
     
-    public void startMessagingService(){
-        input.setMessageInput();
-        output.sendMessage( input.getMessage() );
+    public void processMessage(  ){
+      
+      input.setMessageInput(output.toString());
+        System.out.println(output.getMessage());
     }
+    
  
 }

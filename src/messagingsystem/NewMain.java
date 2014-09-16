@@ -17,10 +17,9 @@ public class NewMain {
     public static void main(String[] args) {
        
        MessagingSystem ms = new MessagingSystem(
-                new KeyboardInput() , new ConsoleOutput() );
+                new GUIInput() , new ConsoleOutput() );
        
-       ms.startMessagingService();
-        
+                ms.processMessage();
     }
     
 }

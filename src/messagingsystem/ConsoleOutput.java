@@ -17,14 +17,7 @@ public class ConsoleOutput implements MessageOutput{
     public String getMessage() {
         return message;
     }
-
-    @Override
-    public void sendMessage(String message) {
-        this.message = message;
-        System.out.println( getMessage() );
-    }
-    
-    
+   
     
     
 }

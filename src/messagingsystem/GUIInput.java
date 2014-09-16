@@ -13,19 +13,14 @@ import javax.swing.JOptionPane;
  */
 public class GUIInput implements MessageInput{
 
-    private String message;
     
     @Override
-    public void setMessageInput(  ) {
+    public void setMessageInput( String message ) {
         
         message = JOptionPane.showInputDialog( "Enter Text: " );
         
     }
 
-    @Override
-    public String getMessage() {
-        return message;
-    }
     
     
     
