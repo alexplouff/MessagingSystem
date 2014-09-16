@@ -21,8 +21,8 @@ public class MessagingSystem {
     
     
     public void startMessagingService(){
-        
-        output.getMessage( );
+        input.setMessageInput();
+        output.sendMessage( input.getMessage() );
     }
  
 }

@@ -5,26 +5,29 @@
  */
 package messagingsystem;
 
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author Alex
  */
-public class KeyboardInput implements MessageInput {
+public class GUIInput implements MessageInput{
 
-    private Scanner keyboardInput = new Scanner(System.in);
-    private String input;
-
+    private String message;
+    
     @Override
-    public void setMessageInput( ) {
-        System.out.println("Enter text: ");
-        this.input = keyboardInput.nextLine();
+    public void setMessageInput(  ) {
+        
+        message = JOptionPane.showInputDialog( "Enter Text: " );
+        
     }
 
     @Override
     public String getMessage() {
-        return input;
+        return message;
     }
-
+    
+    
+    
+    
 }

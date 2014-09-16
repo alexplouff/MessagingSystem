@@ -13,6 +13,6 @@ public interface MessageOutput {
 
     public abstract String getMessage(  );
     
-    public abstract String sendMessage( String getMessage );
+    public abstract void sendMessage( String message );
     
 }

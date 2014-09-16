@@ -11,7 +11,7 @@ package messagingsystem;
  */
 public interface MessageInput {
 
-    public abstract void setMessageInput( String input );
+    public abstract void setMessageInput(  );
     
     public abstract String getMessage();
     
