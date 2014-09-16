@@ -21,6 +21,7 @@ public class ConsoleOutput implements MessageOutput{
     @Override
     public void sendMessage(String message) {
         this.message = message;
+        System.out.println( getMessage() );
     }
     
     

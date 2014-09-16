@@ -17,7 +17,7 @@ public class NewMain {
     public static void main(String[] args) {
        
        MessagingSystem ms = new MessagingSystem(
-                new GUIInput() , new ConsoleOutput() );
+                new KeyboardInput() , new ConsoleOutput() );
        
        ms.startMessagingService();
         
